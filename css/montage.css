@@ -196,11 +196,36 @@ body{
   background:
     radial-gradient(120% 80% at 50% 10%, rgba(255,255,255,.95), rgba(255,255,255,.72)),
     linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,.55));
+
   border: 1px solid rgba(0,0,0,.08);
   box-shadow: var(--shadow);
-
-  overflow:hidden;
+  overflow: hidden;
 }
+.noteScroll{
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  padding: 18px 14px 18px;
+  z-index: 1;
+}
+
+.notePage{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 14px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 8px 18px rgba(0,0,0,.10);
+}
+
+.notePage:last-child{
+  margin-bottom: 4px;
+}
+ 
 
 .noteImg{
   width: 100%;
