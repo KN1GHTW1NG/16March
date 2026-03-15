@@ -249,6 +249,9 @@ body{
 
 /* Decorative corners */
 .corner{
+  pointer-events: none;
+  z-index: 2;
+  
   position:absolute;
   width: 34px;
   height: 34px;
